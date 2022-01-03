@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" 
+id="WebApp_ID" version="4.0" metadata-complete="false">
+
+
+  <display-name>CF</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>DiaryTestServlet</servlet-name>
+    <servlet-class>test.DiaryTestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DiaryTestServlet</servlet-name>
+    <url-pattern>/DiaryTestServlet</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+    <servlet-name>PicReader</servlet-name>
+    <servlet-class>com.fooddiary.model.PicReader</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PicReader</servlet-name>
+    <url-pattern>/PicReader</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PicReader2</servlet-name>
+    <servlet-class>com.fooddiary.model.PicReader2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PicReader2</servlet-name>
+    <url-pattern>/PicReader2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PicReader3</servlet-name>
+    <servlet-class>com.fooddiary.model.PicReader3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PicReader3</servlet-name>
+    <url-pattern>/PicReader3</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>FoodDiaryServlet</servlet-name>
+    <servlet-class>com.fooddiary.controller.FoodDiaryServlet</servlet-class>
+  </servlet>
+  
+    <servlet>
+  	<servlet-name>UserServlet</servlet-name>
+  	<servlet-class>com.user_use.controller.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UserServlet</servlet-name>
+  	<url-pattern>/usermethod/UserServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
+
+
+
